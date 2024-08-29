@@ -30,18 +30,24 @@ public class AddCinemaBranchActivity extends AppCompatActivity implements DAOObs
         setContentView(R.layout.activity_add_cinema_branch);
 
         Intent chooserIntent = getIntent();
-        cinemabranch = (CinemaBranch) chooserIntent.getSerializableExtra("transacaoEdicao");
+        cinemabranch = (CinemaBranch) chooserIntent.getSerializableExtra("cinemaEdicao");
 
-        EditText amountTextInput = findViewById(R.id.editTextCinemaName);
-        EditText descTextInput = findViewById(R.id.editTextDesc);
-        EditText typeTextInput = findViewById(R.id.editTextType);
+        EditText nameTextInput = findViewById(R.id.editTextCinemaName);
+        EditText locationTextInput = findViewById(R.id.editTextDesc);
+        EditText groupTextInput = findViewById(R.id.editTextType);
+
+        if(cinemabranch != null){
+            nameTextInput.setText(cinemabranch.getName());
+            locationTextInput.setText(cinemabranch.getLocation());
+            groupTextInput.setText(cinemabranch.getGroup());
+        }
 
         btnAdd = findViewById(R.id.btnAddTransaction);
         btnAdd.setOnClickListener(view -> {
 
-            String name = amountTextInput.getText().toString().replace(",", ".");
-            String location = descTextInput.getText().toString();
-            String group = typeTextInput.getText().toString();
+            String name = nameTextInput.getText().toString().replace(",", ".");
+            String location = locationTextInput.getText().toString();
+            String group =  groupTextInput.getText().toString();
 
             if (name.isEmpty() || location.isEmpty() || group.isEmpty()) {
                 Toast toast = Toast.makeText(AddCinemaBranchActivity.this, "Preencha todos os campos!", Toast.LENGTH_SHORT);

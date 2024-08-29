@@ -56,5 +56,5 @@ public class CinemaBranch implements Serializable {
 
     @NonNull
     @Override
-    public String toString() {return name + " - " + location + " - " + group;}
+    public String toString() {return name + " - Endereço : " + location + " - Esse Cinema faz parte do Grupo : " + group;}
 }

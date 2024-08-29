@@ -59,6 +59,14 @@ public class MenuActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button btnApiView = findViewById(R.id.btnApiView);
+        btnApiView.setOnClickListener(view -> {
+
+
+            Intent intent = new Intent(MenuActivity.this, FilmsActivity.class);
+            startActivity(intent);
+        });
+
 
         if (getIntent().hasExtra("USERNAME")) {
             String username = getIntent().getStringExtra("USERNAME");

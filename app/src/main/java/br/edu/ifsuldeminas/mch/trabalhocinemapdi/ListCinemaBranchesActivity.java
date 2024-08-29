@@ -95,11 +95,11 @@ public class ListCinemaBranchesActivity extends AppCompatActivity implements DAO
             public boolean onMenuItemClick(@NonNull MenuItem item) {
                 AdapterView.AdapterContextMenuInfo itemClicado =
                         (AdapterView.AdapterContextMenuInfo) menuInfo;
-                CinemaBranch transaction = (CinemaBranch)
+                CinemaBranch cinemabranch = (CinemaBranch)
                         cinemabranchesList.getItemAtPosition(itemClicado.position);
 
                 Intent intent = new Intent(ListCinemaBranchesActivity.this, AddCinemaBranchActivity.class);
-                intent.putExtra("transacaoEdicao", transaction);
+                intent.putExtra("cinemaEdicao", cinemabranch);
                 startActivity(intent);
 
                 return true;
