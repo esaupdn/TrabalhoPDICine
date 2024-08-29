@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "38314587053",
+    "project_id": "trabalhocinemapdi",
+    "storage_bucket": "trabalhocinemapdi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38314587053:android:3587bb43acfcb9e6a8a724",
+        "android_client_info": {
+          "package_name": "br.edu.ifsuldeminas.mch.trabalhocinemapdi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB32DE48uk_BsvP6qXgJFYygFkR1Bp6MrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
