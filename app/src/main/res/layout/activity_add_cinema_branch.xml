@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/styleForSetupPages"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundTollBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#AF0020"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/editTextCinemaName"
+        android:layout_width="@dimen/addBillWidthInput"
+        android:layout_height="@dimen/addBillHeightInput"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/button_background"
+        android:ems="10"
+        android:hint="Nome do Cinema"
+        android:inputType="text"
+        android:textColor="@color/black"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <EditText
+        android:id="@+id/editTextDesc"
+        android:layout_width="@dimen/addBillWidthInput"
+        android:layout_height="@dimen/addBillHeightInput"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_background"
+        android:ems="10"
+        android:hint="Localização"
+        android:inputType="text"
+        android:textColor="@color/black"
+
+        app:layout_constraintEnd_toEndOf="@+id/editTextCinemaName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextCinemaName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCinemaName" />
+
+    <EditText
+        android:id="@+id/editTextType"
+        android:layout_width="@dimen/addBillWidthInput"
+        android:layout_height="@dimen/addBillHeightInput"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_background"
+        android:ems="10"
+        android:hint="Grupo"
+        android:inputType="text"
+
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDesc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextDesc"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDesc" />
+
+    <Button
+        android:id="@+id/btnAddTransaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="92dp"
+        android:backgroundTint="#AF0020"
+        android:text="Adicionar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextType" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
