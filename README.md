@@ -1,9 +1,8 @@
 # AppCinema 
 
 Esse é um aplicativo Android pensado para um cinema, nesse aplicativo é possível |
-Cadastrar | Apagar | Listar e Alterar Filmes de Forma Local/Nuvem.
-Listar notas de Filmes Populares utilizando uma API.
-Reproduzir um Trailer de Filme.
+Cadastrar | Apagar | Listar e Alterar Filmes de Forma Local ou em Nuvem. Também é
+Listar notas de Filmes Populares utilizando uma API. e Compartilhar Algumas Informações via Outros Apps.
 
 
 ## Nesse Aplicativo Utilziei:
