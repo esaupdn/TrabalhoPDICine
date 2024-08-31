@@ -1,13 +1,9 @@
 # AppCinema 
 
-Esse é um aplicativo Android pensado para um cinema, nesse aplicativo é possível |
-Cadastrar | Apagar | Listar e Alterar Filmes de Forma Local ou em Nuvem. Também é
-Listar notas de Filmes Populares utilizando uma API e Compartilhar Algumas Informações via Outros Apps.
+Esse projeto é um aplicativo Android projetado para gerenciar filmes em um cinema. Com ele, você pode cadastrar, apagar, listar e alterar filmes, tanto localmente quanto em nuvem. Além disso, o aplicativo permite visualizar as notas de filmes populares através de uma API externa e compartilhar informações com outros aplicativos.
 
+## Nesse Aplicativo Utilizei:
 
-## Nesse Aplicativo Utilziei:
-
-- Android Studio Iguana
 - Java
 - Retrofit
 - API The Movie Database
